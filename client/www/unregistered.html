@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Created by Dejan Dojcinoski L5574493 2023 -->
+<html lang="SE">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ajax.googleapis.com https://cdn.jsdelivr.net http://192.168.1.103 
+    'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <!-- Use jquery lib for ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="main.css">
+
+    <title>Here To Help: Community Assistance on Your Mobile</title>
+</head>
+<!-- JavaScript function to display all posts is executed after the page has been loaded -->
+<body onload="displayAllPostsHideContactInfo()">
+    <!-- Here is the logo -->
+    <div class="container pt-3 pb-3">
+        <div class="row">
+            <div class="justify-content-center">
+                <a href="index.html"><img src="img/hth.png" alt="Here to help logo" width="300" height="100"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Display the name of the section-->
+        <div class="container pt-1 pb-3">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h1>Inlägg</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div to display all posts-->
+        <div class="container pt-1 pb-3">
+            <div class="row">
+               <div class="event-wrapper" id="displayAllPosts"> 
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Created by Dejan Dojcinoski L5574493 2023 -->
+        <!-- Backward button redirects to the index.html-->
+    <div class="container pt-3 pb-1">
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <a class="btn btn-primary fixed-bottom" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" fill="currentColor"
+                    class="bi bi-arrow-left-square-fill" viewBox="0 0 20 20">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 
+                            2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 
+                            .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z" />
+                </svg>Tillbaka
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

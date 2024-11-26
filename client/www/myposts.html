@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Created by Dejan Dojcinoski L5574493 2023 -->
+<html lang="SE">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ajax.googleapis.com https://cdn.jsdelivr.net http://192.168.1.103 
+    'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <!-- Use jquery lib for ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Here To Help: Community Assistance on Your Mobile</title>
+</head>
+<!-- JavaScript functions to display the username and the logged in user posts 
+    are executed after the page has been loaded -->
+<body onload="displayUserName(); displayUserPosts()">
+    <!-- Here is the logo -->
+    <div class="container pt-3 pb-3">
+        <div class="row">
+            <div class="justify-content-center">
+                <img src="img/hth.png" alt="Here to help logo" width="300" height="100">
+            </div>
+        </div>
+    </div>
+    <!-- Display the username that is logged in-->
+    <div class="container pt-3 pb-1">
+        <div class="row">
+            <div class="col d-flex justify-content-end" id="displayname">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Display the name of the section-->
+    <div class="container pt-1 pb-3">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <h1>Mina Inlägg</h1>
+            </div>
+        </div>
+    </div>
+<!-- Created by Dejan Dojcinoski L5574493 2023 -->
+    <!-- Div to display the users own posts-->
+    <div class="container pt-1 pb-3" id="test">
+        <div class="row">
+            <div class="event-wrapper" id="displayUserPosts">
+
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-5">
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <div class="nav-item pt-3 pb-3">
+                        <a class="nav-link active" href="browse.html" style="color: white;"><strong>Inlägg</strong></a>
+                    </div>
+                    <div class="nav-item pt-3 pb-3">
+                        <a class="nav-link active" href="createpost.html" style="color: white;"><strong>Skapa Ett
+                                Inlägg</strong></a>
+                    </div>
+                    <div class="nav-item pt-3 pb-3">
+                        <a class="nav-link active" href="myposts.html" style="color: white;"><strong>Mina
+                                Inlägg</strong></a>
+                    </div>
+                    <div class="nav-item pt-3 pb-3">
+                        <a class="nav-link active" href="placeholder.html" style="color: white;"><strong>Min
+                                Profil</strong></a>
+                    </div>
+                    <div class="nav-item pt-3 pb-3">
+                        <a class="nav-link active" href="../../server/logout.php" style="color: white;"><strong>Logga
+                                Ut</strong></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+<!-- Created by Dejan Dojcinoski L5574493 2023 -->
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
